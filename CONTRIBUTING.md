@@ -15,8 +15,6 @@ Thanks for improving the skill. The goal is not more prose; it is a more auditab
 python scripts/validate.py . --strict
 ```
 
-5. If you use Hermes, run the skill audit and include the result in the PR.
-
 ## Evidence standard
 
 Investment content is held to a higher bar than ordinary documentation.

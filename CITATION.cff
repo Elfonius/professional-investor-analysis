@@ -5,7 +5,7 @@ abstract: "An evidence-led, multi-lens investment research skill for AI agents. 
 type: software
 authors:
   - name: "Professional Investor Analysis contributors"
-version: 0.4.0
+version: 0.4.1
 date-released: 2026-10-28
 license: MIT
 repository-code: "https://github.com/Elfonius/professional-investor-analysis"

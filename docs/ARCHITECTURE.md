@@ -13,7 +13,7 @@ professional-investor-analysis/
 └── .github/                # CI and contribution templates
 ```
 
-The `skill/` folder is the unit that passes the Hermes skill audit. Keeping the validator outside it avoids shipping executable code inside the skill package.
+The `skill/` folder is the installable unit; repository tooling stays outside it so the package remains dependency-free.
 
 ## Progressive disclosure
 
@@ -21,7 +21,7 @@ The skill is split into three layers:
 
 | Layer | File(s) | Loaded |
 |---|---|---|
-| **Core method** | `skill/SKILL.md` (~4,142 tokens) | Always, when the skill is active |
+| **Core method** | `skill/SKILL.md` (~4,054 tokens) | Always, when the skill is active |
 | **Lens references** | `skill/references/*.md` | Only when the matching lens is material |
 | **Output templates** | `skill/templates/*.md` | Only when producing the deliverable |
 
@@ -41,8 +41,7 @@ SKILL.md
 ├── Evidence rules
 ├── Report architecture
 ├── PDF production
-├── Verification
-└── Related skills
+└── Verification
 
 references/
 ├── methodology-and-sources.md      # asset-class index, source map, data hierarchy
@@ -89,12 +88,12 @@ templates/
 
 | Component | Approx. tokens |
 |---|---:|
-| `skill/SKILL.md` | 4,142 |
+| `skill/SKILL.md` | 4,054 |
 | Longest reference (`skill/references/crypto-diligence.md`) | ~4,000 |
 | Other references | 700–3,500 each |
 | Templates | 500–1,200 each |
 
-The core is under the 5,000-token ceiling used by the Hermes skill auditor. The references are deliberately separate; an agent should load one or two, not all eleven.
+The core is under the 5,000-token ceiling used by the repository validator. The references are deliberately separate; an agent should load one or two, not all eleven.
 
 ## How an agent should load it
 
@@ -136,7 +135,7 @@ The GitHub Actions workflow runs the same command on every push and pull request
 3. Add a row to the scorecard in the screen, memo and report templates.
 4. Add or extend a reference with the evidence standard.
 5. Update the lens-to-reference map in this file.
-6. Run `python scripts/validate.py . --strict` and the skill audit.
+6. Run `python scripts/validate.py . --strict` and review the package.
 
 Do not add a lens only to the prose; if it is not in the matrix, it will be silently skipped.
 

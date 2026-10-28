@@ -2,6 +2,14 @@
 
 All notable changes to this project are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project uses semantic versioning.
 
+## [0.4.1] — 2026-10-28
+
+### Changed
+
+- Made the package standalone: removed references to external agent skills and Hermes-only audit tooling.
+- Replaced external skill handoffs with generic tool prerequisites and self-contained Bittensor/TAOSTATS guidance.
+- No change to the 14-lens method, gate, templates or report contract.
+
 ## [0.4.0] — 2026-10-28
 
 ### Added

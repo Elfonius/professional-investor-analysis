@@ -10,7 +10,7 @@ No. Crypto is the primary track, but the method covers public equities, banks an
 
 ### Does it require Hermes?
 
-No. It is plain Markdown. Hermes users get the native skill loader and `skill-audit`; Claude Code, Codex, Cursor and other agents can load `skill/SKILL.md` as instructions and read the references on demand. See `docs/INSTALL.md`.
+No. It is plain Markdown. Hermes users get the native skill loader; all users get the repository validator. Claude Code, Codex, Cursor and other agents can load `skill/SKILL.md` as instructions and read the references on demand. See `docs/INSTALL.md`.
 
 ### Does it need API keys or a database?
 
@@ -38,7 +38,7 @@ Edit the templates for house style; add a reference for a new asset class or len
 
 ### How is quality measured?
 
-Structural quality: `scripts/validate.py` and, in Hermes, `skill-audit`. Method quality: whether the evidence ledger, gate and counter-thesis are complete and whether a second reader can reproduce the conclusion. Neither proves predictive accuracy. A well-structured report can still be wrong.
+Structural quality: `scripts/validate.py`. Method quality: whether the evidence ledger, gate and counter-thesis are complete and whether a second reader can reproduce the conclusion. Neither proves predictive accuracy. A well-structured report can still be wrong.
 
 ### Can I use it commercially?
 

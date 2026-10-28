@@ -100,8 +100,7 @@ It does **not** mean a licence, a guarantee, a price target or a composite score
 
 ## Quality control
 
-- `scripts/validate.py` checks the repository structure and token budget.
-- `skill-audit` (Hermes) checks the skill package format.
+- `scripts/validate.py` checks the repository structure, links and token budget.
 - The templates enforce the output contract.
 - A second reader — human or agent — should be able to reproduce the evidence ledger and the gate from the report.
 

@@ -6,7 +6,7 @@
 
 [![Validate](https://github.com/Elfonius/professional-investor-analysis/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/Elfonius/professional-investor-analysis/actions/workflows/validate.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-0.4.0-blue.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-0.4.1-blue.svg)](CHANGELOG.md)
 [![Agent-agnostic](https://img.shields.io/badge/agent--agnostic-markdown-8A2BE2.svg)](#installation)
 
 Most AI investment prompts produce a confident narrative from a handful of numbers. This skill does the opposite: it forces a **decision frame**, an **evidence ledger**, a **non-compensatory investability gate**, and a report that separates **project quality** from **instrument attractiveness**, **price**, **timing** and **personal suitability**.
@@ -29,7 +29,7 @@ This skill encodes that discipline for an AI agent:
 - **Evidence before narrative.** Every material claim records its type, value, unit, date, source, independence and status.
 - **A gate that cannot be bought off.** A growth story, a high score or a bullish chart cannot compensate for a broken claim chain, an unenforceable right or an exit that does not exist.
 - **Separate questions, separate answers.** Is the *project* good? Is the *instrument* good? Is the *price* good? Is *now* good? Is it *suitable* for this investor? The skill refuses to collapse them into one score.
-- **Progressive disclosure.** The core `skill/SKILL.md` is about 4,142 tokens. The 11 references load only when their lens is material, so the agent does not carry the whole methodology on every turn.
+- **Progressive disclosure.** The core `skill/SKILL.md` is about 4,054 tokens. The 11 references load only when their lens is material, so the agent does not carry the whole methodology on every turn.
 - **Outputs that fit the decision.** A one-page screen for a first look, a 3–5 page memo for a working decision, or an 8–15 page PDF plus a one-page IC summary and an evidence workpaper for a committee.
 - **Portable by design.** Plain Markdown. Works in Hermes, Claude Code, Codex, Cursor or any agent that can read instruction files.
 
@@ -183,13 +183,13 @@ Current core skill:
 
 | Check | Result |
 |---|---|
-| `skill/SKILL.md` | 129 lines |
-| Tokens (o200k_base) | 4,142 |
+| `skill/SKILL.md` | 128 lines |
+| Tokens (o200k_base) | 4,054 |
 | Ceiling | 5,000 |
 | References | 11 |
 | Templates | 8 content templates + index (4 English, 3 Turkish, 1 workpaper) |
 | Runtime dependencies | none |
-| `skill-audit` (Hermes) | clean |
+| Package validator | `python scripts/validate.py . --strict` — PASS |
 
 Structural quality is not predictive validity. The skill makes the analysis more disciplined and auditable; it does not guarantee returns, and it is not a substitute for licensed advice or primary documents.
 
