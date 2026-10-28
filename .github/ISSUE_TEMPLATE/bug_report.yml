@@ -1,0 +1,67 @@
+name: Bug report
+description: Report a broken pointer, validator failure, template defect or unclear instruction.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a defect. Please do not include personal data, credentials or non-public documents.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: The observed behavior, with the exact file or prompt if possible.
+      placeholder: "The validator fails with ..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Minimal reproduction
+      description: Command, prompt or file excerpt that reproduces the issue.
+      render: shell
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Skill version
+      placeholder: "0.4.0"
+    validations:
+      required: true
+  - type: input
+    id: agent
+    attributes:
+      label: Agent and version
+      placeholder: "Hermes 0.x / Claude Code 0.x / Codex 0.x / other"
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - SKILL.md
+        - references
+        - templates
+        - examples
+        - validator / CI
+        - installation
+        - documentation
+        - other
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched existing issues.
+          required: true
+        - label: I removed personal data, credentials and non-public documents.
+          required: true

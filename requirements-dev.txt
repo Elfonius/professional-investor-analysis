@@ -1,0 +1,3 @@
+# Optional development dependencies
+# tiktoken gives the validator an exact o200k_base token count.
+tiktoken>=0.7,<1

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this skill in research or a product, cite it using this metadata."
+title: "Professional Investor Analysis"
+abstract: "An evidence-led, multi-lens investment research skill for AI agents. Crypto-first, with equities, credit, funds, private companies, real assets, commodities and derivatives."
+type: software
+authors:
+  - name: "Professional Investor Analysis contributors"
+version: 0.4.0
+date-released: 2026-10-28
+license: MIT
+repository-code: "https://github.com/Elfonius/professional-investor-analysis"
+url: "https://github.com/Elfonius/professional-investor-analysis"
+keywords:
+  - investment research
+  - due diligence
+  - valuation
+  - risk
+  - crypto
+  - AI agents
+  - agent skills

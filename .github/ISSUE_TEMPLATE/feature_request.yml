@@ -1,0 +1,54 @@
+name: Feature request
+description: Propose a new lens, asset-class branch, template or validator check.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A feature request should improve the method, not just add length. Describe the failure mode it prevents.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: The decision or failure mode the current skill handles poorly.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Which file(s), what rule, and what evidence standard?
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - new lens
+        - new asset class
+        - crypto reference
+        - non-crypto reference
+        - template / output
+        - validator / CI
+        - documentation
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Why is this better than extending an existing lens or template?
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched existing issues and discussions.
+          required: true
+        - label: The proposal does not add a composite score, price target or guarantee.
+          required: true
+        - label: The proposal does not hard-code a threshold without a documented standard.
+          required: true
