@@ -79,33 +79,16 @@ Mark every lens you cannot assess as "not assessable" and name the missing input
 
 ## How it works
 
-```mermaid
-flowchart TD
-  subgraph Frame[Frame]
-    A[1. Decision frame] --> B[2. Asset and claims map]
-    B --> C[3. Evidence ledger]
-    C --> D[4. Freshness and comparability]
-  end
-  subgraph Analyze[Analyze]
-    E[5. Business and product] --> F[6. Market and competition]
-    F --> G[7. Demand and unit economics]
-    G --> H[8. Team and governance]
-    H --> I[9. Instrument and token economics]
-    I --> J[10. Ownership and on-chain flows]
-  end
-  subgraph Test[Test]
-    K[11. Technical and market structure] --> L[12. Community, news and catalysts]
-    L --> M[13. Legal and security]
-    M --> N[14. Valuation]
-    N --> O[15. Stress test and red-team]
-  end
-  subgraph Decide[Decide]
-    P[16. Decide, monitor and deliver]
-  end
-  D --> E
-  J --> K
-  O --> P
-```
+The workflow has four stages and 16 steps. Every stage produces an artifact the next stage can audit.
+
+**Frame → Analyze → Test → Decide**
+
+| Stage | Steps | What it produces |
+|---|---|---|
+| **Frame** | 1–4: decision frame · asset and claims map · evidence ledger · freshness | A question worth answering and a ledger that can be checked |
+| **Analyze** | 5–10: business · market · demand and unit economics · team · instrument · ownership and flows | The business case and the instrument case, kept separate |
+| **Test** | 11–15: technical · community and news · legal and security · valuation · stress test | Price, timing, legal and downside tests |
+| **Decide** | 16: verdict · monitoring · report | A conditional decision and the evidence behind it |
 
 ### The 14 lenses
 
