@@ -67,6 +67,8 @@ cp -R professional-investor-analysis/skill/. .claude/skills/professional-investo
 
 Copy the contents of `skill/` (`SKILL.md`, `references/` and `templates/`) next to your agent's instructions, or paste `SKILL.md` into its system prompt and keep the references available for on-demand loading. See **[docs/INSTALL.md](docs/INSTALL.md)** for a generic loader prompt.
 
+Prefer a skill-only download? Use the [latest release](https://github.com/Elfonius/professional-investor-analysis/releases/latest) and unzip it into your skills directory.
+
 ### First prompt
 
 ```text
