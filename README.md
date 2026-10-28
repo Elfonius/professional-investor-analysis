@@ -4,7 +4,7 @@
 
 **Evidence-led, multi-lens investment research for AI agents.**
 
-[![Validate](https://github.com/Elfonius/professional-investor-analysis/actions/workflows/validate.yml/badge.svg)](https://github.com/Elfonius/professional-investor-analysis/actions/workflows/validate.yml)
+[![Validate](https://github.com/Elfonius/professional-investor-analysis/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/Elfonius/professional-investor-analysis/actions/workflows/validate.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-0.4.0-blue.svg)](CHANGELOG.md)
 [![Agent-agnostic](https://img.shields.io/badge/agent--agnostic-markdown-8A2BE2.svg)](#installation)
@@ -192,7 +192,7 @@ The repository is validated on every push and pull request:
 python scripts/validate.py . --strict
 ```
 
-The validator checks frontmatter, name and description limits, body size, token ceiling (when `tiktoken` is installed), reference pointers, placeholder leakage and table consistency.
+The validator checks frontmatter, name and description limits, body size, token ceiling (when `tiktoken` is installed), reference pointers, placeholder leakage, table consistency and relative links.
 
 Current core skill:
 
